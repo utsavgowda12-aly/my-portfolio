@@ -405,3 +405,9 @@ html,body,#root{background:#f2f3f1;color:var(--text)}body{color:var(--text)}main
 @media(max-width:1050px){.light-hero .light-hero-photo{width:min(100%,440px)}.light-hero .light-photo-frame{width:84%;height:84%}}
 @media(max-width:760px){.light-hero .light-hero-photo{width:min(100%,390px);aspect-ratio:1}.light-hero .light-photo-frame{top:8%;width:84%;height:84%}}
 @media(max-width:430px){.light-hero .light-hero-photo{width:min(100%,345px)}.light-hero .light-photo-frame{width:84%;height:84%}}
+/* Deployment-safe timeline rails and compact About headline */
+.education-path-line,.journey-path-line{z-index:1!important;width:2px!important;display:block!important;opacity:1!important;background:linear-gradient(180deg,transparent 0%,rgba(11,31,58,.52) 6%,rgba(11,31,58,.52) 94%,transparent 100%)!important;box-shadow:0 0 0 1px rgba(255,255,255,.5),0 0 12px rgba(11,31,58,.08);transform:none!important;visibility:visible!important}
+.education-entry,.journey-step{z-index:2}
+.about-premium .about-heading-wrap h2{font-size:clamp(3.15rem,5vw,5.4rem);line-height:.94;letter-spacing:-.06em}
+@media(max-width:760px){.education-path-line,.journey-path-line{width:2px!important}.about-premium .about-heading-wrap h2{font-size:clamp(2.75rem,11vw,3.8rem);line-height:.96}}
+@media(max-width:430px){.about-premium .about-heading-wrap h2{font-size:clamp(2.55rem,12vw,3.35rem)}}
